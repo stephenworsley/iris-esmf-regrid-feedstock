@@ -1,5 +1,5 @@
 {% set name = "iris-esmf-regrid" %}
-{% set version = "0.1.dev0" %}
+{% set version = "0.1.dev1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/SciTools-incubator/iris-esmf-regrid/archive/v{{ version }}.tar.gz
-  sha256: 0d8d4b4dd73f32dd5d8f4789838e0ca76919373f216115266274bc5481fcaf0f
+  sha256: 5082e4b8742f7425710db17a97ad384815d04f4f243297d935eef7280f51482d
 
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
