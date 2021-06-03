@@ -1,5 +1,5 @@
 {% set name = "iris-esmf-regrid" %}
-{% set version = "0.1.dev1" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SciTools-incubator/iris-esmf-regrid/archive/v{{ version }}.tar.gz
-  sha256: 5082e4b8742f7425710db17a97ad384815d04f4f243297d935eef7280f51482d
+  sha256: 94249b8bdd4a28e102aa380a49535faa312cde89248aacc1e405726baf4dbb54
 
 
 build:
@@ -36,8 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "A collection of structured and unstructured ESMF regridding schemes for Iris."
-  
+  summary: A collection of structured and unstructured ESMF regridding schemes for Iris.
 extra:
   recipe-maintainers:
     - jamesp
