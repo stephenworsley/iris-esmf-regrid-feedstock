@@ -1,5 +1,5 @@
 {% set name = "iris-esmf-regrid" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SciTools-incubator/iris-esmf-regrid/archive/v{{ version }}.tar.gz
-  sha256: 94249b8bdd4a28e102aa380a49535faa312cde89248aacc1e405726baf4dbb54
+  sha256: 48bf1d9ddea7a0519fd950b56a29063068a50c52fcf3e37080d106e32d597c57
 
 
 build:
@@ -26,6 +26,7 @@ requirements:
     - cartopy
     - esmpy
     - iris >=3
+    - dask
 
 test:
   imports:
