@@ -26,6 +26,7 @@ requirements:
     - cartopy
     - esmpy
     - iris >=3
+    - dask
 
 test:
   imports:
