@@ -27,6 +27,7 @@ requirements:
     - esmpy
     - iris >=3
     - dask
+    - cf-units
 
 test:
   imports:
