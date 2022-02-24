@@ -119,5 +119,6 @@ Feedstock Maintainers
 * [@bjlittle](https://github.com/bjlittle/)
 * [@jamesp](https://github.com/jamesp/)
 * [@stephenworsley](https://github.com/stephenworsley/)
+* [@trexfeathers](https://github.com/trexfeathers/)
 * [@zklaus](https://github.com/zklaus/)
 
