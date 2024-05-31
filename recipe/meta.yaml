@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/SciTools-incubator/iris-esmf-regrid/archive/v{{ version }}.tar.gz
-  sha256: 1c696bb54c5703a938bde6368bbc0301d93659527b32b5f7200dcff824cf1743
+  url: https://pypi.io/packages/source/e/esmf-regrid/esmf_regrid-{{ version }}.tar.gz
+  sha256: 37e85a54f7951ec81c7b2fd55be5907793e5894870f78a9e1411fd0b9ed64bfe
 
 
 build:
@@ -21,10 +21,10 @@ requirements:
     - pip
   run:
     - python >=3.10
-    - numpy
+    - numpy >=1.14
     - scipy
-    - cartopy
-    - esmpy
+    - cartopy >=0.18
+    - esmpy >=7.0
     - iris >=3
     - dask
     - cf-units
@@ -46,3 +46,5 @@ extra:
     - stephenworsley
     - zklaus
     - trexfeathers
+    - pp-mo
+    - HGWright
