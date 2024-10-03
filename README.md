@@ -3,7 +3,7 @@ About iris-esmf-regrid-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/iris-esmf-regrid-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/SciTools-incubator/iris-esmf-regrid
+Home: https://github.com/SciTools/iris-esmf-regrid
 
 Package license: BSD-3-Clause
 
