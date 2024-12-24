@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "iris-esmf-regrid" %}
 {% set version = "0.11.0" %}
 
@@ -6,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/e/esmf-regrid/esmf_regrid-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/e/esmf-regrid/esmf_regrid-{{ version }}.tar.gz
   sha256: 0b0ee3c842e08b96687ee0b20bfd2df7a68e7e026e21f6b2e159eb1009e8d699
 
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools >=64
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.14
     - scipy
     - cartopy >=0.18
@@ -31,6 +32,8 @@ requirements:
     - cf-units
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - esmf_regrid
 
